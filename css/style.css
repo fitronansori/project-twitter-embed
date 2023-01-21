@@ -1,0 +1,121 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap");
+
+/* root */
+
+:root {
+  --bg-color: rgb(20, 29, 38);
+  --box-color: rgb(36, 52, 71);
+  --text-color: rgb(255, 255, 255);
+  --text2-color: rgba(255, 255, 255, 0.6);
+  --hs-color: rgb(30, 142, 212);
+
+  --font-family: "Source Sans Pro", sans-serif;
+}
+
+/* Reset Style */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-family);
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* style */
+
+.container {
+  width: 601px;
+  height: 228px;
+  background-color: var(--box-color);
+  border-radius: 10px;
+  padding: 35px 31px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* .profile-wrapper {
+} */
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.profile-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.profile-info h2 {
+  font-size: 18px;
+  font-size: 600;
+}
+
+.profile-info p {
+  font-size: 16px;
+  color: var(--text2-color);
+}
+
+.profile-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.twett-wrapper p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.twett-wrapper p span {
+  color: var(--hs-color);
+}
+
+.tweet-footer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text2-color);
+}
+
+.love-img {
+  width: 20px;
+  height: 20px;
+}
